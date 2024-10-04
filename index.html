@@ -10,9 +10,9 @@
       var image = document.getElementById("johnathan");
       var intervalId;
       
-      function randomSizeGeneratorIdkaaaaa(seed)
+      function randomSizeGeneratorIdkaaaaa(seed) {
         return Math.floor(linearCongruentialGenerator(seed) * (3 - -4 + 1)) + -4;  
-      
+      } 
       function changeSize() {
         var newWidth = image.style.width+randomSizeGeneratorIdkaaaaa(Date.now);
         var newHeight = image.style.width+randomSizeGeneratorIdkaaaaa(Date.now);
