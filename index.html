@@ -9,6 +9,19 @@
     <script>
       var image = document.getElementById("johnathan");
       var intervalId;
+
+      function linearCongruentialGenerator(seed) {
+        const m = 2 ** 32; // Modulus
+        const a = 1103515245; // Multiplier
+        const c = 12345; // Increment
+      
+        let x = seed;
+      
+        return () => {
+          x = (a * x + c) % m;
+          return x / m;
+        };
+      }
       
       function randomSizeGeneratorIdkaaaaa(seed) {
         const randomGenerator = linearCongruentialGenerator(seed)
