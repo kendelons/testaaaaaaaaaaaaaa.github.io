@@ -25,7 +25,7 @@ h<!DOCTYPE html>
       
       function randomSizeGeneratorIdkaaaaa(seed) {
         const randomGenerator = linearCongruentialGenerator(seed)
-        return Math.floor(randomGenerator() * (3 - -4 + 1)) + -4;  
+        return ((randomGenerator() * (3 - -4 + 1)) + -4);  
       } 
       function changeSize() {
         var currentWidth = image.style.width
