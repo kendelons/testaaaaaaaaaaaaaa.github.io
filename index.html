@@ -33,9 +33,14 @@ h<!DOCTYPE html>
         image.style.width = newWidth + "px";
         image.style.height = newHeight + "px";
       }
-  
+
+      function doStuff() {
+        changeSize()
+        startAnimation()
+      }
+      
       function startAnimation() {
-        intervalId = setInterval(changeSize, 200); // Change size every 1000 milliseconds (1 second)
+        intervalId = setInterval(doStuff(), 200); // Change size every 1000 milliseconds (1 second)
       }
   
       function stopAnimation() {
