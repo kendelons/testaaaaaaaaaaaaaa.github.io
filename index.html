@@ -5,26 +5,27 @@
 </head>
 <body>
   <img src="johnathan.png" id="johnathan" style="margin: 0 auto; display: block;"
+    
     <script>
-    var image = document.getElementById("johnathan");
-    var intervalId;
+      var image = document.getElementById("johnathan");
+      var intervalId;
 
-    function changeSize() {
-      var newWidth = image.style.width+Math.random(-4,3);
-      var newHeight = image.style.width+Math.random(-4,3);
-      image.style.width = newWidth + "px";
-      image.style.height = newHeight + "px";
-    }
-
-    function startAnimation() {
-      intervalId = setInterval(changeSize, 1000); // Change size every 1000 milliseconds (1 second)
-    }
-
-    function stopAnimation() {
-      clearInterval(intervalId);
-    }
-
-    startAnimation(); // Start the animation when the page loads
-  </script>
+      function changeSize() {
+        var newWidth = image.style.width+Math.random(-4,3);
+        var newHeight = image.style.width+Math.random(-4,3);
+        image.style.width = newWidth + "px";
+        image.style.height = newHeight + "px";
+      }
+  
+      function startAnimation() {
+        intervalId = setInterval(changeSize, 1000); // Change size every 1000 milliseconds (1 second)
+      }
+  
+      function stopAnimation() {
+        clearInterval(intervalId);
+      }
+  
+      startAnimation(); // Start the animation when the page loads
+    </script>
 </body>
 </html>
