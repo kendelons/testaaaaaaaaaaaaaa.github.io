@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+h<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -29,13 +29,13 @@
       } 
       function changeSize() {
         var newWidth = image.style.width+randomSizeGeneratorIdkaaaaa(Date.now);
-        var newHeight = image.style.width+randomSizeGeneratorIdkaaaaa(Date.now);
+        var newHeight = image.style.height+randomSizeGeneratorIdkaaaaa(Date.now);
         image.style.width = newWidth + "px";
         image.style.height = newHeight + "px";
       }
   
       function startAnimation() {
-        intervalId = setInterval(changeSize, 1000); // Change size every 1000 milliseconds (1 second)
+        intervalId = setInterval(changeSize, 200); // Change size every 1000 milliseconds (1 second)
       }
   
       function stopAnimation() {
