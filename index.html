@@ -11,7 +11,8 @@
       var intervalId;
       
       function randomSizeGeneratorIdkaaaaa(seed) {
-        return Math.floor(linearCongruentialGenerator(seed) * (3 - -4 + 1)) + -4;  
+        const randomGenerator = linearCongruentialGenerator(seed)
+        return Math.floor(randomGenerator() * (3 - -4 + 1)) + -4;  
       } 
       function changeSize() {
         var newWidth = image.style.width+randomSizeGeneratorIdkaaaaa(Date.now);
